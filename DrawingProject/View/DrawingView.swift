@@ -20,6 +20,8 @@ public class DrawingView: UIView {
     public override func draw(_ rect: CGRect) -> Void
     {
         //drawing
+        createStickFigure().stroke()
+        drawTurtle()
     }
     private func createStickFigure() -> UIBezierPath
     {
@@ -45,6 +47,16 @@ public class DrawingView: UIView {
         
         return figure
                       
+    }
+    private func drawTurtle() -> Void
+    {
+        let logo = UIBezierPath()
+        UIColor.white.setFill()
+        logo.move(to: CGPoint (x: 50, y: 250))
+        logo.addLine(to: CGPoint(x: 100, y: 300))
+        logo.addLine(to: CGPoint(x: 50, y: 350))
+        logo.close()
+        logo.fill()
     }
 
 }
