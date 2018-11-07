@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F478BDE219371ED006637BC /* DrawingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F478BDD219371ED006637BC /* DrawingCollectionViewController.swift */; };
 		0F7FF213218B70E100FCE6B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7FF212218B70E100FCE6B5 /* AppDelegate.swift */; };
 		0F7FF215218B70E100FCE6B5 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7FF214218B70E100FCE6B5 /* DrawingViewController.swift */; };
 		0F7FF218218B70E100FCE6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7FF216218B70E100FCE6B5 /* Main.storyboard */; };
@@ -35,6 +36,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0F478BDD219371ED006637BC /* DrawingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCollectionViewController.swift; sourceTree = "<group>"; };
 		0F7FF20F218B70E100FCE6B5 /* DrawingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7FF212218B70E100FCE6B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F7FF214218B70E100FCE6B5 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
@@ -148,6 +150,7 @@
 			isa = PBXGroup;
 			children = (
 				0F7FF214218B70E100FCE6B5 /* DrawingViewController.swift */,
+				0F478BDD219371ED006637BC /* DrawingCollectionViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -286,6 +289,7 @@
 				0F7FF244218B7D1600FCE6B5 /* DrawingView.swift in Sources */,
 				0F7FF215218B70E100FCE6B5 /* DrawingViewController.swift in Sources */,
 				0F7FF213218B70E100FCE6B5 /* AppDelegate.swift in Sources */,
+				0F478BDE219371ED006637BC /* DrawingCollectionViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
