@@ -8,7 +8,7 @@
 
 /* Begin PBXBuildFile section */
 		0F478BDE219371ED006637BC /* DrawingCollectionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F478BDD219371ED006637BC /* DrawingCollectionViewController.swift */; };
-		0F478BE021938188006637BC /* ArtCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F478BDF21938188006637BC /* ArtCollectionViewCell.swift */; };
+		0F478BE021938188006637BC /* ArtCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F478BDF21938188006637BC /* ArtCell.swift */; };
 		0F7FF213218B70E100FCE6B5 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7FF212218B70E100FCE6B5 /* AppDelegate.swift */; };
 		0F7FF215218B70E100FCE6B5 /* DrawingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0F7FF214218B70E100FCE6B5 /* DrawingViewController.swift */; };
 		0F7FF218218B70E100FCE6B5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0F7FF216218B70E100FCE6B5 /* Main.storyboard */; };
@@ -38,7 +38,7 @@
 
 /* Begin PBXFileReference section */
 		0F478BDD219371ED006637BC /* DrawingCollectionViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingCollectionViewController.swift; sourceTree = "<group>"; };
-		0F478BDF21938188006637BC /* ArtCollectionViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCollectionViewCell.swift; sourceTree = "<group>"; };
+		0F478BDF21938188006637BC /* ArtCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ArtCell.swift; sourceTree = "<group>"; };
 		0F7FF20F218B70E100FCE6B5 /* DrawingProject.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DrawingProject.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0F7FF212218B70E100FCE6B5 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		0F7FF214218B70E100FCE6B5 /* DrawingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DrawingViewController.swift; sourceTree = "<group>"; };
@@ -134,7 +134,7 @@
 				0F7FF216218B70E100FCE6B5 /* Main.storyboard */,
 				0F7FF21B218B70E300FCE6B5 /* LaunchScreen.storyboard */,
 				0F7FF243218B7D1600FCE6B5 /* DrawingView.swift */,
-				0F478BDF21938188006637BC /* ArtCollectionViewCell.swift */,
+				0F478BDF21938188006637BC /* ArtCell.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -293,7 +293,7 @@
 				0F7FF215218B70E100FCE6B5 /* DrawingViewController.swift in Sources */,
 				0F7FF213218B70E100FCE6B5 /* AppDelegate.swift in Sources */,
 				0F478BDE219371ED006637BC /* DrawingCollectionViewController.swift in Sources */,
-				0F478BE021938188006637BC /* ArtCollectionViewCell.swift in Sources */,
+				0F478BE021938188006637BC /* ArtCell.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
