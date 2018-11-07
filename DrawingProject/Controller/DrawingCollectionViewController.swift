@@ -22,7 +22,8 @@ public class DrawingCollectionViewController: UICollectionViewController
             UIImage(named: "Octocat"),
             UIImage(named: "JavaHaiku"),
             UIImage(named: "SwiftHaiku"),
-            UIImage(named: "MainframeHaiku")
+            UIImage(named: "MainframeHaiku"),
+            UIImage(named: "StickFigure")
             
             ]
     }()
@@ -33,7 +34,8 @@ public class DrawingCollectionViewController: UICollectionViewController
         "MyOctocat",
         "MyJava",
         "MySwift",
-        "MyMainframe"
+        "MyMainframe",
+        "MyStickFigureGuy"
         ]
     }()
 
@@ -50,7 +52,7 @@ public class DrawingCollectionViewController: UICollectionViewController
         // Do any additional setup after loading the view.
     }
 
-    override func didReceiveMemoryWarning()
+    public override func didReceiveMemoryWarning()
     {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
