@@ -99,6 +99,18 @@ public class DrawingCollectionViewController: UICollectionViewController
         
         return CGSize(width: widthPerItem, height: widthPerItem)
     }
+    public func collectionView(_ collectionView: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               insertForSectionAt section: Int) -> UIEdgeInsets
+    {
+        return sectionInsets
+    }
+    public func collectionView(_ collectionVeiw: UICollectionView,
+                               layout collectionViewLayout: UICollectionViewLayout,
+                               minimumLineSPacingForSectionAt section: Int) -> CGFloat
+    {
+        return sectionInsets.left
+    }
 
     // MARK: UICollectionViewDelegate
 
