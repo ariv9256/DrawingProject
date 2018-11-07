@@ -12,6 +12,30 @@ private let reuseIdentifier = "artidentifier"
 
 public class DrawingCollectionViewController: UICollectionViewController
 {
+    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20)
+    private let itemsPerRowCompact : CGFloat = 4
+    private let itemsPerRowNormal : CGFloat = 6
+    
+    private let creativeCS : [UIImage?] =
+    {
+        return [
+            UIImage(named: "Octocat"),
+            UIImage(named: "JavaHaiku"),
+            UIImage(named: "SwiftHaiku"),
+            UIImage(named: "MainframeHaiku"),
+            
+            ]
+    }()
+    
+    private let labels : [String] =
+    {
+        return [
+        "MyJava",
+        "MyOctocat",
+        "MySwift",
+        "MyMainframe"
+        ]
+    }()
 
     public override func viewDidLoad() -> Void
     {
