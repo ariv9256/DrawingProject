@@ -12,7 +12,7 @@ private let reuseIdentifier = "artidentifier"
 
 public class DrawingCollectionViewController: UICollectionViewController
 {
-    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20)
+    private let sectionInsets = UIEdgeInsets(top: 50.0, left: 20.0, bottom: 50.0, right: 20.0)
     private let itemsPerRowCompact : CGFloat = 4
     private let itemsPerRowNormal : CGFloat = 6
     
@@ -22,7 +22,7 @@ public class DrawingCollectionViewController: UICollectionViewController
             UIImage(named: "Octocat"),
             UIImage(named: "JavaHaiku"),
             UIImage(named: "SwiftHaiku"),
-            UIImage(named: "MainframeHaiku"),
+            UIImage(named: "MainframeHaiku")
             
             ]
     }()
@@ -30,8 +30,8 @@ public class DrawingCollectionViewController: UICollectionViewController
     private let labels : [String] =
     {
         return [
-        "MyJava",
         "MyOctocat",
+        "MyJava",
         "MySwift",
         "MyMainframe"
         ]
@@ -68,26 +68,34 @@ public class DrawingCollectionViewController: UICollectionViewController
 
     // MARK: UICollectionViewDataSource
 
-    override func numberOfSections(in collectionView: UICollectionView) -> Int
+    public override func numberOfSections(in collectionView: UICollectionView) -> Int
     {
-        // #warning Incomplete implementation, return the number of sections
-        return 0
+        return 1
     }
 
 
-    override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
+    public override func collectionView(_ collectionView: UICollectionView, numberOfItemsInSection section: Int) -> Int
     {
-        // #warning Incomplete implementation, return the number of items
-        return 0
+        return creativeCS.count
     }
 
-    override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
+    public override func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell
     {
         let cell = collectionView.dequeueReusableCell(withReuseIdentifier: reuseIdentifier, for: indexPath)
     
         // Configure the cell
     
         return cell
+    }
+    public func collectionView(_ collectionView : UICollectionView,
+                                        layout collectionViewLayout: UICollectionViewLayout,
+                                        sizeForItemAT indexPath: IndexPath) -> CGSize
+    {
+        let paddingSpace = sectionInsets.left * (itemsPerRowCompact + 1)
+        let availableWidth = view.frame.width - paddingSpace
+        let widthPerItem = availableWidth / itemsPerRowCompact
+        
+        return CGSize(width: widthPerItem, height: widthPerItem)
     }
 
     // MARK: UICollectionViewDelegate
