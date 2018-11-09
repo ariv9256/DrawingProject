@@ -23,7 +23,8 @@ public class DrawingCollectionViewController: UICollectionViewController
             UIImage(named: "JavaHaiku"),
             UIImage(named: "SwiftHaiku"),
             UIImage(named: "MainframeHaiku"),
-            UIImage(named: "StickFigure")
+            UIImage(named: "StickFigure"),
+            UIImage(named: "UnsettlingThreats")
             
             ]
     }()
@@ -31,11 +32,12 @@ public class DrawingCollectionViewController: UICollectionViewController
     private let labels : [String] =
     {
         return [
-        "MyOctocat",
-        "MyJava",
-        "MySwift",
-        "MyMainframe",
-        "MyStickFigureGuy"
+        "My Octocat",
+        "My Java",
+        "My Swift",
+        "My Mainframe",
+        "My Stick Figure Guy",
+        "Unsettling Threats"
         ]
     }()
 
@@ -45,9 +47,6 @@ public class DrawingCollectionViewController: UICollectionViewController
 
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
-
-        // Register cell classes
-        self.collectionView!.register(UICollectionViewCell.self, forCellWithReuseIdentifier: reuseIdentifier)
 
         // Do any additional setup after loading the view.
     }

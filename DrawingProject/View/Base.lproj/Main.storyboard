@@ -93,7 +93,7 @@
                 </collectionViewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j7O-eb-DcH" userLabel="First Responder" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="-81"/>
+            <point key="canvasLocation" x="303" y="-76"/>
         </scene>
     </scenes>
 </document>
